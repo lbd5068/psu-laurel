@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head onload="draw()">
-  	<canvas id="canvas" width="window.innerWidth" height="150"></canvas>
+  	<canvas id="canvas" width="window.innerWidth-25px" height="150"></canvas>
     <meta charset="utf-8"/>
     <title>Main Page</title>
     <!-- link to main stylesheet -->
@@ -15,14 +15,14 @@
         
       }
       document.write('<p>'+window.innerWidth +'</p>');
-document.write('<canvas id="canvas" width="' + window.innerWidth + '" height="300px"/>');
+document.write('<canvas id="canvas" width="' + (window.innerWidth-25px) + '" height="300px"/>');
     </script>
     <style type="text/css">
       canvas { border: 1px solid black; }
     </style>
   </head>
   <body onload="load()">
-    <script type="text/javascript"> function load(){ document.getElementById("p1").innerHTML = getScreenSize()['width'];}</script>
+    <script type="text/javascript"> function load(){ document.getElementById("p1").innerHTML =window.innerWidth-25px;}</script>
     <p id="p1">hello there</p>
   </body>
 </html>
