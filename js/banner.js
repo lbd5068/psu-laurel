@@ -4,8 +4,8 @@ function resize(){
  load();
 }
 var mouse={
- x:0;
- y:0;
+ x:0,
+ y:0
 };
 function load(){
 var alignWidth=
