@@ -8,9 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
     <script type="text/javascript">
       function draw(){
-      	  var alignWidth=window.innerWidth-25;
-      	  window.alert(alignWidth);
-      	document.getElementById('canvas').innerHTML =alignWidth;
+
         var canvas = document.getElementById('canvas');
         if (canvas.getContext){
           var ctx = canvas.getContext('2d');
@@ -26,7 +24,7 @@
     <script type="text/javascript">
     	 function load(){
 var alignWidth=window.innerWidth-25;
-      	  window.alert(alignWidth);
+      	document.getElementById('canvas').innerHTML =alignWidth;
     	 }
     	 </script>
     <p id="p1">hello there</p>
