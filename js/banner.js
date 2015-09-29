@@ -10,7 +10,7 @@ function render(){
   ctx.save();
   ctx.lineWidth = 5;
   ctx.strokeStyle = '#325FA2';
-  ctx.clearRect(0,0,cWid,cHight);
+  ctx.clearRect(0,0,cWid,cHeight);
   ctx.beginPath();
   for(var x=0;x<cWid/25;x++){//
    for(var y=0;y<cHeight/25;y++){//
