@@ -40,11 +40,11 @@ function clock(){
   canvas.addEventListener('click', function(e){
    mouse=getMousePos(canvas,e);
    render();
-});
+ });
 
   ctx.restore();
 
-//  window.requestAnimationFrame(clock);
+  window.requestAnimationFrame(clock);
 }
 
-//window.requestAnimationFrame(clock);
+window.requestAnimationFrame(clock);
