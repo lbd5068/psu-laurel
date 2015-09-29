@@ -8,15 +8,14 @@
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
     <script type="text/javascript">
       function draw(){
+      	  var alignWidth=window.innerWidth-25;
+      	document.getElementById('canvas').innerHTML =alignWidth;
         var canvas = document.getElementById('canvas');
         if (canvas.getContext){
           var ctx = canvas.getContext('2d');
         }
         
       }
-      document.write('<p>'+window.innerWidth +'</p>');
-      var alignWidth=window.innerWidth-25;
-document.write('<canvas id="canvas" width="' + alignWidth + '" height="300px"/>');
     </script>
     <style type="text/css">
       canvas { border: 1px solid black; }
@@ -25,8 +24,7 @@ document.write('<canvas id="canvas" width="' + alignWidth + '" height="300px"/>'
   <body onload="load()">
     <script type="text/javascript">
     	 function load(){
-    	 	var alignWidth=window.innerWidth-25;
-    	 	document.getElementById("p1").innerHTML =alignWidth;
+
     	 }
     	 </script>
     <p id="p1">hello there</p>
