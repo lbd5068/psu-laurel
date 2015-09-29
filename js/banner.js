@@ -6,7 +6,7 @@ function resize(){
 function render(){
  var ctx = document.getElementById('canvas').getContext('2d');
  var cWid=ctx.canvas.clientWidth;
- var chight=ctx.canvas.clientHeight;
+ var cHeight=ctx.canvas.clientHeight;
   ctx.save();
   ctx.lineWidth = 5;
   ctx.strokeStyle = '#325FA2';
