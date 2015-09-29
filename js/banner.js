@@ -31,4 +31,3 @@ function clock(){
 }
 
 window.requestAnimationFrame(clock);
-}
