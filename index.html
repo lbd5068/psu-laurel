@@ -22,7 +22,7 @@ document.write('<canvas id='canvas' width="' + getScreenSize()['width'] + '" hei
     </style>
   </head>
   <body onload="load()">
-    <script type="text/javascript"> function load(){ document.write('<p>'+getScreenSize()['width'] +'</p>');}</script>
-    <p>hello there</p>
+    <script type="text/javascript"> function load(){ document.getElementById("p1").innerHTML = getScreenSize()['width'];}</script>
+    <p id="p1">hello there</p>
   </body>
 </html>
