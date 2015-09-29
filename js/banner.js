@@ -29,10 +29,11 @@ function clock(){
   ctx.beginPath();
   for(var x=0;x<10;x++){//
    for(var y=0;y<10;y++){//
-    ctx.fillRect(x*11+mouse.x,y*11+mouse.y,10,10);
+    ctx.rect(x*11+mouse.x,y*11+mouse.y,10,10);
    }
   }
   ctx.closePath();
+  ctx.fill();
   canvas.addEventListener('mousemove', function(e){
    mouse=getMousePos(canvas,e);
    clock();
