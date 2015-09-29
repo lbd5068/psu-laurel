@@ -23,7 +23,7 @@ function clock(){
   var now = new Date();
   var ctx = document.getElementById('canvas').getContext('2d');
   ctx.save();
-  ctx.lineWidth = 14;
+  ctx.lineWidth = 5;
   ctx.strokeStyle = '#325FA2';
   ctx.clearRect(0,0,ctx.canvas.clientWidth,ctx.canvas.clientHeight);//get actual nums
   ctx.beginPath();
