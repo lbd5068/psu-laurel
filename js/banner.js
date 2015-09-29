@@ -33,7 +33,7 @@ function clock(){
    }
   }
   ctx.closePath();
-  ctx.fill();
+  ctx.stroke();
   canvas.addEventListener('mousemove', function(e){
    mouse=getMousePos(canvas,e);
    clock();
