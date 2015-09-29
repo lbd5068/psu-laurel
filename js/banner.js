@@ -20,7 +20,7 @@ function getMousePos(canvas, evt) {
   };
 }
 function clock(){
-  var now = new Date();
+  //var now = new Date();
   var ctx = document.getElementById('canvas').getContext('2d');
   ctx.save();
   ctx.lineWidth = 5;
@@ -29,7 +29,7 @@ function clock(){
   ctx.beginPath();
   for(var x=0;x<10;x++){//
    for(var y=0;y<10;y++){//
-    ctx.rect(x*11+mouse.x/5,y*11+mouse.y/5,10,10);
+    ctx.rect(x*11+mouse.x/5.0,y*11+mouse.y/5.0,10,10);
    }
   }
   ctx.closePath();
