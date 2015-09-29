@@ -14,7 +14,7 @@ function render(){
   ctx.beginPath();
   for(var x=0;x<cWid/10;x++){//
    for(var y=0;y<cHeight/10;y++){//
-    ctx.rect(x*11+(mouse.x-x*11)/5.0,y*11+(mouse.y-y*11)/5.0,10,10);
+    ctx.rect((x*11+(mouse.x-x*11))/5.0,(y*11+(mouse.y-y*11))/5.0,10,10);
    }
   }
   ctx.closePath();
