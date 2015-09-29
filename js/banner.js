@@ -21,31 +21,6 @@ function clock(){
   ctx.lineWidth = 8;
   ctx.lineCap = "round";
 
-  // Hour marks
-  ctx.save();
-  for (var i=0;i<12;i++){
-    ctx.beginPath();
-    ctx.rotate(Math.PI/6);
-    ctx.moveTo(100,0);
-    ctx.lineTo(120,0);
-    ctx.stroke();
-  }
-  ctx.restore();
-
-  // Minute marks
-  ctx.save();
-  ctx.lineWidth = 5;
-  for (i=0;i<60;i++){
-    if (i%5!=0) {
-      ctx.beginPath();
-      ctx.moveTo(117,0);
-      ctx.lineTo(120,0);
-      ctx.stroke();
-    }
-    ctx.rotate(Math.PI/30);
-  }
-  ctx.restore();
- 
   var sec = now.getSeconds();
   var min = now.getMinutes();
   var hr  = now.getHours();
