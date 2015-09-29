@@ -12,6 +12,8 @@ function clock(){
   var now = new Date();
   var ctx = document.getElementById('canvas').getContext('2d');
   ctx.save();
+  ctx.lineWidth = 14;
+  ctx.strokeStyle = '#325FA2';
   ctx.clearRect(0,0,150,150);//get actual nums
   ctx.roundRect(35, 10, 225, 110, 20).stroke();
   ctx.translate(75,75);
