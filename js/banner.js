@@ -35,8 +35,11 @@ function clock(){
   ctx.closePath();
   ctx.stroke();
   canvas.addEventListener('mousemove', function(e){
-   mouse=getMousePos(canvas,e);
+   var tmp=getMousePos(canvas,e);
+   if(abs(tmp.x-mouse.x)>5||abs(tmp.y-mouse.y)>5){
+   mouse=tmp;
    clock();
+  }
 });
 
   ctx.restore();
