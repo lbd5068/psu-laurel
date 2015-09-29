@@ -28,7 +28,7 @@ function clock(){
   ctx.clearRect(0,0,ctx.canvas.clientWidth,ctx.canvas.clientHeight);//get actual nums
   for(var x=0;x<10;x++){//
    for(var y=0;y<10;y++){//
-    ctx.fillRect(x*11-(x-mouse.x),y*11+mouse.y,10,10);
+    ctx.fillRect(x*11+mouse.x,y*11+mouse.y,10,10);
    }
   }
   canvas.addEventListener('mousemove', function(e){
