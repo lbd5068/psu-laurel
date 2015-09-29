@@ -21,8 +21,8 @@ document.write('<canvas id='canvas' width="' + getScreenSize()['width'] + '" hei
       canvas { border: 1px solid black; }
     </style>
   </head>
-  <body>
-    
+  <body onload="load()">
+    <script type="text/javascript"> function load(){ document.write('<p>'+getScreenSize()['width'] +'</p>');}</script>
     <p>hello there</p>
   </body>
 </html>
