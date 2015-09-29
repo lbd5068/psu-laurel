@@ -15,8 +15,8 @@ function clock(){
   ctx.lineWidth = 14;
   ctx.strokeStyle = '#325FA2';
   ctx.clearRect(0,0,150,150);//get actual nums
-  for(int x=0;x<10;x++){
-   for(int y=0;y<10;y++){
+  for(int x=0;x<10;x++){//don't trust no auto semicoloning
+   for(int y=0;y<10;y++){//
     ctx.fillRect(x*110,y*110,100,100);
    }
   }
