@@ -34,12 +34,9 @@ function clock(){
   }
   ctx.closePath();
   ctx.stroke();
-  canvas.addEventListener('mousemove', function(e){
-   var tmp=getMousePos(canvas,e);
-   if(Math.abs(tmp.x-mouse.x)>5||Math.abs(tmp.y-mouse.y)>5){
-   mouse=tmp;
+  canvas.addEventListener('click', function(e){
+   mouse=getMousePos(canvas,e);
    clock();
-  }
 });
 
   ctx.restore();
