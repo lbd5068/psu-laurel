@@ -32,7 +32,7 @@ function clock(){
     ctx.fillRect(x*11+mouse.x,y*11+mouse.y,10,10);
    }
   }
-  ctx.endPath();
+  ctx.closePath();
   canvas.addEventListener('mousemove', function(e){
    mouse=getMousePos(canvas,e);
    clock();
