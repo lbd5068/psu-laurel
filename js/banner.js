@@ -25,7 +25,7 @@ function clock(){
   ctx.save();
   ctx.lineWidth = 14;
   ctx.strokeStyle = '#325FA2';
-  ctx.clearRect(0,0,150,150);//get actual nums
+  ctx.clearRect(0,0,ctx.canvas.clientWidth,ctx.canvas.clientHeight);//get actual nums
   for(var x=0;x<10;x++){//
    for(var y=0;y<10;y++){//
     ctx.fillRect(x*11+mouse.x,y*11+mouse.y,10,10);
