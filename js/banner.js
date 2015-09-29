@@ -36,7 +36,7 @@ function clock(){
   ctx.stroke();
   canvas.addEventListener('mousemove', function(e){
    var tmp=getMousePos(canvas,e);
-   if(abs(tmp.x-mouse.x)>5||abs(tmp.y-mouse.y)>5){
+   if(Math.abs(tmp.x-mouse.x)>5||Math.abs(tmp.y-mouse.y)>5){
    mouse=tmp;
    clock();
   }
